@@ -1,5 +1,8 @@
-flask
+Flask
 requests
 numpy
-tensorflow==2.22.0rc0
-pillow
+Pillow
+python-dotenv
+google-genai
+tensorflow==2.15.0
+gunicorn
