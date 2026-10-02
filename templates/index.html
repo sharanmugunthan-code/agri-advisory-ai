@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Agri-Advisory</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+  <h1>🌾 AI Crop Advisor</h1>
+  <p class="subtitle">Upload a crop photo and get instant disease detection + a personalized farming advisory.</p>
+
+  <div class="card">
+    <form action="/analyze" method="POST" enctype="multipart/form-data">
+      <label>Crop name</label>
+      <input type="text" name="crop" placeholder="e.g. Tomato, Rice, Wheat" required>
+
+      <label>Your location (city)</label>
+      <input type="text" name="location" placeholder="e.g. Chennai" required>
+
+      <label>Upload a leaf/crop photo</label>
+      <input type="file" name="photo" accept="image/*" required>
+
+      <button type="submit">Analyze & Get Advisory</button>
+    </form>
+  </div>
+
+  {% if error %}
+    <p style="color:red; text-align:center;">{{ error }}</p>
+  {% endif %}
+
+  {% if result %}
+  <div class="card">
+    <h2>Diagnosis</h2>
+    <p>{{ result.diagnosis }}</p>
+
+    <h2>AI Advisory</h2>
+    <p>{{ result.advisory }}</p>
+  </div>
+  {% endif %}
+</div>
+
+</body>
+</html>

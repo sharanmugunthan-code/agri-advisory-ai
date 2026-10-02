@@ -1,0 +1,6 @@
+.env
+.venv/
+.convert_venv/
+__pycache__/
+*.pyc
+keras_model.h5

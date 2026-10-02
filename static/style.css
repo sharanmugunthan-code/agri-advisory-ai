@@ -1,0 +1,55 @@
+* { box-sizing: border-box; font-family: Arial, sans-serif; }
+
+body {
+  background: #f4f6f2;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 { color: #2e5c2e; margin-bottom: 0; }
+.subtitle { color: #666; margin-top: 4px; }
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-top: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-top: 0.8rem;
+  margin-bottom: 0.2rem;
+  font-size: 0.9rem;
+}
+
+input[type="text"], input[type="file"] {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+button {
+  margin-top: 1.2rem;
+  width: 100%;
+  padding: 0.7rem;
+  background: #2e5c2e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover { background: #244a24; }
+
+h2 { font-size: 1rem; color: #2e5c2e; margin-bottom: 0.3rem; }

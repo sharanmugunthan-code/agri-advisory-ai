@@ -1,0 +1,5 @@
+flask
+requests
+numpy
+tensorflow==2.22.0rc0
+pillow
