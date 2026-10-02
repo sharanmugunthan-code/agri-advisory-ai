@@ -4,3 +4,7 @@
 __pycache__/
 *.pyc
 keras_model.h5
+agri_model.h5
+*.png
+*.jpg
+*.jpeg

@@ -46,10 +46,7 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 from tensorflow.keras.models import load_model
 
 # Load the trained agriculture disease model
-model = load_model(
-    "agri_model.keras",
-    compile=False
-)
+model = load_model("keras_model.h5", compile=False)
 
 print("Agriculture model loaded successfully!") 
 
